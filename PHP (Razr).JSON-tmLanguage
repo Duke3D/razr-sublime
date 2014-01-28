@@ -69,7 +69,7 @@
          "begin":"(@)\\(",
          "beginCaptures":{
             "1":{
-               "name":"keyword.at"
+               "name":"support.constant.at.razr"
             }
          },
          "patterns":[
