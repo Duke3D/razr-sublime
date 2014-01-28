@@ -739,7 +739,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.at</string>
+					<string>support.constant.at.razr</string>
 				</dict>
 			</dict>
 			<key>comment</key>
