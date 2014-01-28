@@ -10,7 +10,7 @@
       "expression": {
          "comment":"Classical expression ($self is not working?)",
          "name":"source.expression",
-         "begin":"(@)(?=[a-zA-Z])",
+         "begin":"(@)\\s?(?=[a-zA-Z])",
          "beginCaptures":{
             "1":{
                "name":"support.constant.at.razr"
@@ -22,46 +22,46 @@
             },
             {
                "name":"source.expression",
-               "begin":"\\(",
+               "begin":"\\(|\\[",
                "patterns":[
                   {
                      "include": "#complex"
                   },
                   {
                      "name":"source.expression",
-                     "begin":"\\(",
+                     "begin":"\\(|\\[",
                      "patterns":[
                         {
                            "include":"#complex"
                         },
                         {
                            "name":"source.expression",
-                           "begin":"\\(",
+                           "begin":"\\(|\\[",
                            "patterns":[
                               {
                                  "include":"#complex"
                               },
                               {
                                  "name":"source.expression",
-                                 "begin":"\\(",
+                                 "begin":"\\(|\\[",
                                  "patterns":[
                                     {
                                        "include":"#complex"
                                     }
                                  ],
-                                 "end":"\\)"
+                                 "end":"\\)|\\]"
                               }
                            ],
-                           "end":"\\)"
+                           "end":"\\)|\\]"
                         }
                      ],
-                     "end":"\\)"
+                     "end":"\\)|\\]"
                   }
                ],
-               "end":"\\)"
+               "end":"\\)|\\]"
             }
          ],
-         "end":"\\s*\\s*\\s*=\\s*(\\{|\\s*(?=@\\{))|\\s*@?\\{\\s*\\(?[_a-zA-Z0-9,|]*\\)?\\s*=>|\\s*\\{|(?=[^(._a-zA-Z0-9|]|[.](?=[^a-zA-Z]))"
+         "end":"(?=[^(._a-zA-Z0-9|\\[ ]|[.](?=[^a-zA-Z]))"
       },
       "paranthesesExpression": {
          "comment":"Parentheses expression",
