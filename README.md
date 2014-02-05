@@ -2,7 +2,7 @@
 
 If the background of Razr syntax is not highlighted add following code to your Sublime theme. 
 
-```
+```xml
 <dict>
 	<key>name</key>
 	<string>Razr</string>
