@@ -2,17 +2,19 @@
 
 If the background of Razr syntax is not highlighted add following code to your Sublime theme. 
 
-```<dict>
-	  <key>name</key>
-	  <string>Razr</string>
-	  <key>scope</key>
-	  <string>text.html.razr source.expression</string>
-	  <key>settings</key>
-		<dict>
-			<key>background</key>
-			<string>#444</string>
-		</dict>
-	</dict>```
+```
+<dict>
+	<key>name</key>
+	<string>Razr</string>
+	<key>scope</key>
+	<string>text.html.razr source.expression</string>
+	<key>settings</key>
+	<dict>
+		<key>background</key>
+		<string>#444</string>
+	</dict>
+</dict>
+```
 
 ## Credits
 
