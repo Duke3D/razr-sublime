@@ -2,7 +2,7 @@
 
 If the background of Razr syntax is not highlighted add following code to your Sublime theme. 
 
-  <dict>
+```<dict>
 	  <key>name</key>
 	  <string>Razr</string>
 	  <key>scope</key>
@@ -12,7 +12,7 @@ If the background of Razr syntax is not highlighted add following code to your S
 			<key>background</key>
 			<string>#444</string>
 		</dict>
-	</dict>
+	</dict>```
 
 ## Credits
 
